@@ -23,6 +23,8 @@ setTimeout(function() {
     
     document.getElementsByTagName('head')[0].appendChild(script); 
 
+    console.log((window['READTHEDOCS_DATA'] || { version: 'latest' }).version)
+
     window.addEventListener("DOMContentLoaded", function() {
         var xhr = new XMLHttpRequest();
         xhr.open("GET", window.location + "../versions.json");
