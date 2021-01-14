@@ -17,6 +17,11 @@ setTimeout(function() {
         });
     }
     
+    var link = document.createElement('link');
+    link.rel='stylesheet';
+    link.href = 'https://assets.readthedocs.org/static/css/badge_only.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+
     var script = document.createElement('script');
     script.src = 'https://argocd-notifications.readthedocs.io/_/api/v2/footer_html/?'+
         'callback=' + callbackName + '&project=argocd-notifications&page=&theme=mkdocs&format=jsonp&docroot=docs&source_suffix=.md&version=' + (window['READTHEDOCS_DATA'] || { version: 'latest' }).version;
