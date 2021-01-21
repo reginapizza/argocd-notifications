@@ -28,7 +28,7 @@ window.addEventListener("DOMContentLoaded", function() {
   //            i.aliases.includes(CURRENT_VERSION);
   //   }).version;
 
-  var versions = (window[READTHEDOCS_DATA]).version
+  var versions = (window['READTHEDOCS_DATA'])
 
   var select = makeSelect(versions.map(function(i) {
     return {text: i.title, value: i.version};
