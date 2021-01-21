@@ -44,6 +44,8 @@ setTimeout(function() {
 
     }
     
+    document.getElementsByTagName('head')[0].appendChild(<base href="/"/>);
+
     var link = document.createElement('link');
     link.rel='stylesheet';
     link.href = 'https://assets.readthedocs.org/static/css/badge_only.css';
@@ -82,6 +84,4 @@ setTimeout(function() {
 
     console.log("version is " + (window['READTHEDOCS_DATA']).version)
     console.log("test")
-
-    document.getElementsByTagName('head')[0].appendChild(<base href="/"/>);
 }, 0);
