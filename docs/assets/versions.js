@@ -80,6 +80,5 @@ setTimeout(function() {
     
     document.getElementsByTagName('head')[0].appendChild(script); 
 
-    console.log("version is " + 'https://argocd-notifications.readthedocs.io/_/api/v2/footer_html/?'+
-    'callback=' + callbackName + '&project=argocd-notifications&page=&theme=mkdocs&format=jsonp&docroot=docs&source_suffix=.md&version=' + (window['READTHEDOCS_DATA']).version)
+    console.log("version is " + (window['READTHEDOCS_DATA']).version)
 }, 0);
