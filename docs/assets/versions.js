@@ -54,26 +54,26 @@ setTimeout(function() {
     // RTD version
     var versionRTDLink = document.createElement('link');
     versionRTDLink.rel='stylesheet';
-    versionRTDLink.href = 'assets/versions.css';
+    versionRTDLink.href = '/assets/versions.css';
     document.getElementsByTagName('head')[0].appendChild(versionRTDLink);
 
     // my version
     var versionCSSLink = document.createElement('link');
     versionCSSLink.rel='stylesheet';
-    versionCSSLink.href = '../css/version-select.css';
+    versionCSSLink.href = '/../css/version-select.css';
     document.getElementsByTagName('head')[0].appendChild(versionCSSLink);
 
     var versionWarningCSSLink = document.createElement('link');
     versionWarningCSSLink.rel='stylesheet';
-    versionWarningCSSLink.href = '../stylesheets/extra.css';
+    versionWarningCSSLink.href = '/../stylesheets/extra.css';
     document.getElementsByTagName('head')[0].appendChild(versionWarningCSSLink);
 
     var versionScript = document.createElement('script');
-    versionScript.src = '../js/version-select.js';
+    versionScript.src = '/../js/version-select.js';
     document.getElementsByTagName('head')[0].appendChild(versionScript);
 
     var versionWarningScript = document.createElement('script');
-    versionWarningScript.src ='../javascripts/extra.js';
+    versionWarningScript.src ='/../javascripts/extra.js';
     document.getElementsByTagName('head')[0].appendChild(versionWarningScript);
 
     var script = document.createElement('script');
