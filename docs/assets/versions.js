@@ -75,8 +75,8 @@ setTimeout(function() {
     document.getElementsByTagName('head')[0].appendChild(versionWarningScript);
 
     var script = document.createElement('script');
-    script.src = 'https://argocd-notifications.readthedocs.io/_/api/v2/footer_html/?'+
-        'callback=' + callbackName + '&project=argocd-notifications&page=&theme=mkdocs&format=jsonp&docroot=docs&source_suffix=.md&version=' + (window['READTHEDOCS_DATA'] || { version: 'latest' }).version;
+    script.src = 'https://regina-argocd-notifications.readthedocs.io/_/api/v2/footer_html/?'+
+        'callback=' + callbackName + '&regina-project=argocd-notifications&page=&theme=mkdocs&format=jsonp&docroot=docs&source_suffix=.md&version=' + (window['READTHEDOCS_DATA'] || { version: 'latest' }).version;
     
     document.getElementsByTagName('head')[0].appendChild(script); 
 
