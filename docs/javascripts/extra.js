@@ -12,7 +12,11 @@ window.addEventListener("DOMContentLoaded", function() {
   // };
   // xhr.send();
 
-  if (window(READTHEDOCS_DATA)!== "latest") {
+  if ((window['READTHEDOCS_DATA']).version !== "latest") {
     document.querySelector("div[data-md-component=announce]").innerHTML = "<div id='announce-msg'>You are viewing the docs for a previous version of Argo CD, <a href='https://argoproj.github.io/argo-cd/'>click here to go to the latest version</a></div>"
+  }
+
+  if ((window['READTHEDOCS_DATA']).version === "latest") {
+    document.querySelector("div[data-md-component=announce]").innerHTML = "<div id='announce-msg'>Yay you're on the latest version of docs! <a href='https://argoproj.github.io/argo-cd/'>click here to go to the latest version</a></div>"
   }
 }); 
