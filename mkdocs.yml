@@ -14,15 +14,19 @@ theme:
   logo: 'assets/logo.png'
 extra_javascript:
   - assets/versions.js
+  - javascripts/extra.js
+  - js/version-select.js
 extra_css:
   - assets/versions.css
+  - stylesheets/extra.css
+  - css/version-select.css
 markdown_extensions:
 - codehilite
 - admonition
 - pymdownx.highlight
 - pymdownx.superfences
-- markdown_include.include:
-    base_path: docs
+# - markdown_include.include:
+#     base_path: docs
 - toc:
     permalink: true
 nav:
