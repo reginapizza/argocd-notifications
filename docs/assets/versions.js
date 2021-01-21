@@ -44,7 +44,7 @@ setTimeout(function() {
 
     }
     
-    document.getElementsByTagName('head')[0].appendChild(<base href="/"/>);
+    // document.getElementsByTagName('head')[0].appendChild(<base href="/"/>);
 
     var link = document.createElement('link');
     link.rel='stylesheet';
