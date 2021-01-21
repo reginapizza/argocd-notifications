@@ -81,4 +81,5 @@ setTimeout(function() {
     document.getElementsByTagName('head')[0].appendChild(script); 
 
     console.log("version is " + (window['READTHEDOCS_DATA']).version)
+    console.log("test")
 }, 0);
