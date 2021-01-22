@@ -69,11 +69,11 @@ setTimeout(function() {
     document.getElementsByTagName('head')[0].appendChild(versionWarningCSSLink);
 
     var versionScript = document.createElement('script');
-    versionScript.src = '/../js/version-select.js';
+    versionScript.src = '../js/version-select.js';
     document.getElementsByTagName('head')[0].appendChild(versionScript);
 
     var versionWarningScript = document.createElement('script');
-    versionWarningScript.src ='/../javascripts/extra.js';
+    versionWarningScript.src ='../javascripts/extra.js';
     document.getElementsByTagName('head')[0].appendChild(versionWarningScript);
 
     var script = document.createElement('script');
@@ -82,6 +82,6 @@ setTimeout(function() {
     
     document.getElementsByTagName('head')[0].appendChild(script); 
 
-    console.log("version is " + (window['READTHEDOCS_DATA']).version)
+    // console.log("version is " + (window['READTHEDOCS_DATA']).version)
     console.log("RTD Data is " + (window['READTHEDOCS_DATA']))
 }, 0);
