@@ -83,7 +83,7 @@ setTimeout(function() {
     document.getElementsByTagName('head')[0].appendChild(script); 
 
     // console.log("version is " + (window['READTHEDOCS_DATA']).version)
-    console.log("RTD data is " + (window['READTHEDOCS_DATA']))
+    console.log("RTD data is " + JSON.stringify((window['READTHEDOCS_DATA'])))
 }, 0);
 
 window.addEventListener("DOMContentLoaded", function() {
