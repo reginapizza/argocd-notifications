@@ -79,6 +79,8 @@ setTimeout(function() {
     var script = document.createElement('script');
     script.src = 'https://regina-argocd-notifications.readthedocs.io/_/api/v2/footer_html/?'+
         'callback=' + callbackName + '&project=regina-argocd-notifications&page=&theme=mkdocs&format=jsonp&docroot=docs&source_suffix=.md&version=' + (window['READTHEDOCS_DATA'] || { version: 'latest' }).version;
+
+    console.log(script)
     
     document.getElementsByTagName('head')[0].appendChild(script); 
 
