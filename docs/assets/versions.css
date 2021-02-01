@@ -225,6 +225,10 @@ ul.fas li .fa-large:before,ul.fas li .fa-large:before{
     padding: 6px;
     color:#fcfcfc;
     font-size: .6rem !important;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 80px;
 }
 .rst-versions.rst-badge{
     display: block !important;
