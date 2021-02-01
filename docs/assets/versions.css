@@ -12,6 +12,7 @@
 
 .rst-other-versions > dl:first-child {
     display: flex !important;
+    flex-direction: column;
     line-height: 0px !important;
 }
 
