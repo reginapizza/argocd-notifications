@@ -1,3 +1,7 @@
+.md-header-nav__title {
+    display: flex;
+}
+  
 .rst-other-versions {
     text-align: right;
 }
@@ -7,13 +11,260 @@
 }
 
 .rst-other-versions > dl:first-child {
-    display: block;
+    display: flex !important;
+    line-height: 0px !important;
 }
 
 .rst-versions.shift-up .rst-other-versions {
-    display: block;
+    display: flex !important;
 }
 
 .rst-versions .rst-other-versions {
     display: none;
+}
+
+/* Version Warning */
+div[data-md-component=announce] {
+    background-color: rgba(255,145,0,.1);
+}
+div[data-md-component=announce]>div#announce-msg{
+    color: var(--md-admonition-fg-color);
+    font-size: .8rem;
+    text-align: center;
+    margin: 15px;
+}
+div[data-md-component=announce]>div#announce-msg>a{
+    color: var(--md-typeset-a-color);
+    text-decoration: underline;
+}
+
+/* from version-select.css */
+#version-selector {
+    padding: .6rem .8rem;
+}
+
+#version-selector .form-control {
+    background-color: white;
+    border-radius: .1rem;
+    border: none;
+    color: black;
+    font-family: "Work Sans",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;
+}
+
+/* from https://assets.readthedocs.org/static/css/badge_only.css */
+.fa:before{
+    -webkit-font-smoothing:antialiased
+}
+.clearfix{
+*zoom:1
+}
+.clearfix:before,.clearfix:after{   
+    display:table;
+    content:""
+}
+.clearfix:after{
+    clear:both
+}
+
+@font-face{
+    font-family:FontAwesome;
+    font-weight:normal;
+    font-style:normal;
+    src:url("../fonts/fontawesome-webfont.eot");
+    src:url("../fonts/fontawesome-webfont.eot?#iefix") 
+    format("embedded-opentype"),url("../fonts/fontawesome-webfont.woff") 
+    format("woff"),url("../fonts/fontawesome-webfont.ttf") 
+    format("truetype"),url("../fonts/fontawesome-webfont.svg#FontAwesome") 
+    format("svg")
+}
+.fa:before{
+    display:inline-block;
+    font-family:FontAwesome;
+    font-style:normal;
+    font-weight:normal;
+    line-height:1;
+    text-decoration:inherit
+}
+
+a .fa{
+    display:inline-block;
+    text-decoration:inherit
+}
+
+li .fa{
+    display:inline-block
+}
+
+li .fa-large:before,li .fa-large:before{
+    width:1.875em
+}
+
+ul.fas{
+    list-style-type:none;
+    margin-left:2em;
+    text-indent:-0.8em
+}
+
+ul.fas li .fa{
+    width:.8em
+}
+
+ul.fas li .fa-large:before,ul.fas li .fa-large:before{
+    vertical-align:baseline
+}
+
+.fa-book:before{
+    content:"ï€­"
+
+}.icon-book:before{
+    content:"ï€­"
+}
+.fa-caret-down:before{
+    content:"ïƒ—"
+}
+.icon-caret-down:before{
+    content:"ïƒ—"
+}
+.fa-caret-up:before{
+    content:"ïƒ˜"
+}
+.icon-caret-up:before{
+    content:"ïƒ˜"
+}
+.fa-caret-left:before{
+    content:"ïƒ™"
+}
+.icon-caret-left:before{
+    content:"ïƒ™"
+}
+.fa-caret-right:before{
+    content:"ïƒš"
+}
+.icon-caret-right:before{
+    content:"ïƒš"
+}
+.rst-versions{
+    position: relative !important;
+    bottom: 0;
+    left: 0;
+    width: 100px !important;
+    color: black; /*fix this color */
+    background: hsla(174, 100%, 29%, 1) !important;
+    font-family: inherit !important;
+    font-size: .8rem !important;
+    z-index: 0 !important;
+}
+.rst-versions a{
+    color:#2980B9;
+    text-decoration:none
+}
+.rst-versions .rst-badge-small{
+    display:none
+}
+.rst-versions .rst-current-version{
+    padding:12px;
+    background-color: hsla(174, 100%, 29%, 1) !important;
+    display:block;
+    text-align:right;
+    font-size:90%;
+    cursor:pointer;
+    color: white !important;
+    *zoom:1
+}
+.rst-versions .rst-current-version:before,.rst-versions .rst-current-version:after{
+    display:table;content:""
+}
+.rst-versions .rst-current-version:after{
+    clear:both
+}
+.rst-versions .rst-current-version .fa{
+    color:#fcfcfc
+}
+.rst-versions .rst-current-version .fa-book{
+    float:left
+}
+.rst-versions .rst-current-version .icon-book{
+    float:left
+}
+.rst-versions .rst-current-version.rst-out-of-date{
+    background-color:#E74C3C;
+    color:#fff
+}
+.rst-versions .rst-current-version.rst-active-old-version{
+    background-color:#F1C40F;
+    color:#000
+}
+.rst-versions.shift-up{
+    height:auto;
+    max-height:100%
+}
+.rst-versions.shift-up .rst-other-versions{
+    display:block
+}
+.rst-versions .rst-other-versions{
+    font-size:90%;
+    padding:12px;
+    color:gray;
+    display:none
+}
+.rst-versions .rst-other-versions hr{
+    display: none !important;
+    height: 0px !important;
+    border: 0px;
+    margin: 0px !important;
+    padding: 0px;
+    border-top: none !important;
+}
+.rst-versions .rst-other-versions dd{
+    display:inline-block;
+    margin:0
+}
+.rst-versions .rst-other-versions dd a{
+    display:inline-block;
+    padding: 6px;
+    color:#fcfcfc;
+    font-size: .6rem !important;
+}
+.rst-versions.rst-badge{
+    display: block !important;
+    width:auto;
+    bottom: 0px !important;
+    right: 0px !important;
+    left:auto;
+    border:none;
+    max-width: 100px !important;
+    text-align: center !important;
+}
+.rst-versions.rst-badge .icon-book{
+    display: none;
+}
+.rst-versions.rst-badge .fa-book{
+    display: none !important;
+}
+.rst-versions.rst-badge.shift-up .rst-current-version{
+    text-align: left !important;
+}
+.rst-versions.rst-badge.shift-up .rst-current-version .fa-book{
+    display: none !important;
+}
+.rst-versions.rst-badge.shift-up .rst-current-version .icon-book{
+    display: none !important;
+}
+.rst-versions.rst-badge .rst-current-version{
+    width:auto;
+    height:30px;
+    line-height:30px;
+    padding: 0 6px;
+    display: inline-block !important;
+    text-align: left !important;
+    font-size: .8rem !important;
+}
+@media screen and (max-width: 768px){
+    .rst-versions{
+        width:85%;
+        display:none
+    }
+    .rst-versions.shift{
+        display:block
+    }
 }

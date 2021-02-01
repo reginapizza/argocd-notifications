@@ -14,12 +14,8 @@ theme:
   logo: 'assets/logo.png'
 extra_javascript:
   - assets/versions.js
-  - javascripts/extra.js
-  - js/version-select.js
 extra_css:
   - assets/versions.css
-  - stylesheets/extra.css
-  - css/version-select.css
 markdown_extensions:
 - codehilite
 - admonition
