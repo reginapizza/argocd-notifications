@@ -230,6 +230,10 @@ ul.fas li .fa-large:before,ul.fas li .fa-large:before{
     overflow: hidden;
     width: 80px;
 }
+.rst-versions .rst-other-versions dd a:hover{
+    font-size: .7rem !important;
+    font-weight: bold;
+}
 .rst-versions.rst-badge{
     display: block !important;
     width:auto;
