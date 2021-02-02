@@ -6,7 +6,7 @@ setTimeout(function() {
         document.querySelector(".md-header-nav > .md-header-nav__title").appendChild(div);
         const container = div.querySelector('.rst-versions');
         var caret = document.createElement('div');
-        caret.innerHTML = "<div><span class='fa fa-caret-down'></span></div>"
+        caret.innerHTML = "<span class='fa fa-caret-down'></span>"
         div.querySelector('.rst-current-version').appendChild(caret);
         div.querySelector('.rst-current-version').addEventListener('click', function() {
             const classes = container.className.split(' ');
@@ -32,7 +32,7 @@ setTimeout(function() {
 
         // //re-creating dropdown caret for better styling
         // var caret = document.createElement('div');
-        // caret.innerHTML = "<div><span class='fa fa-caret-down'></span></div>"
+        // caret.innerHTML = <span class='fa fa-caret-down'></span>"
         // div.querySelector('.rst-current-version').appendChild(caret);
   }, 0);
 
