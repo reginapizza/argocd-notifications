@@ -6,8 +6,8 @@
     display: inline-block !important;
 }
 
-.fa .fa-angle-down {
-    display: inline-block !important;
+.fa .fa-caret-down {
+    display: none !important;
 }
   
 .rst-other-versions {
@@ -190,7 +190,7 @@ ul.fas li .fa-large:before,ul.fas li .fa-large:before{
     color:#fcfcfc
 }
 .rst-versions .rst-current-version .fa-caret-down{
-    display: none !important;
+    display: none;
 }
 .rst-versions .rst-current-version .fa-book{
     float:left
