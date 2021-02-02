@@ -256,7 +256,7 @@ ul.fas li .fa-large:before,ul.fas li .fa-large:before{
     border:none;
     max-width: 100px !important;
     text-align: center !important;
-    height: 2.4rem;
+    height: 2.4rem !important;
 }
 .rst-versions.rst-badge .icon-book{
     display: none;
