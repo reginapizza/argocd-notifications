@@ -32,7 +32,7 @@ setTimeout(function() {
   }, 0);
 
 // VERSION WARNINGS
-  window.addEventListener("popstate", function() {
+  window.addEventListener("DOMContentLoaded" || "popstate", function() {
     if ((window['READTHEDOCS_DATA']).version !== "latest") {
         document.querySelector("div[data-md-component=announce]").innerHTML = "<div id='announce-msg'>You are viewing the docs for a previous version of Argo CD, <a href='https://argoproj.github.io/argo-cd/'>click here to go to the latest version</a></div>"
     }
