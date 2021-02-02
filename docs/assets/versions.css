@@ -257,6 +257,9 @@ ul.fas li .fa-large:before,ul.fas li .fa-large:before{
     max-width: 100px !important;
     text-align: center !important;
     height: 2.4rem;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
 }
 .rst-versions.rst-badge .icon-book{
     display: none;
