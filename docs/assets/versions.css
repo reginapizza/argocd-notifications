@@ -257,9 +257,6 @@ ul.fas li .fa-large:before,ul.fas li .fa-large:before{
     max-width: 100px !important;
     text-align: center !important;
     height: 2.4rem;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-    white-space: nowrap !important;
 }
 .rst-versions.rst-badge .icon-book{
     display: none;
@@ -284,6 +281,9 @@ ul.fas li .fa-large:before,ul.fas li .fa-large:before{
     display: inline-block !important;
     text-align: left !important;
     font-size: .8rem !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
 }
 @media screen and (max-width: 768px){
     .rst-versions{
