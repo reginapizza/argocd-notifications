@@ -4,6 +4,8 @@
 
 .dropdown-caret {
     display: inline-block !important;
+    position: absolute;
+    right: 4px;
 }
 
 .fa .fa-caret-down {
@@ -254,6 +256,7 @@ ul.fas li .fa-large:before,ul.fas li .fa-large:before{
     border:none;
     max-width: 100px !important;
     text-align: center !important;
+    height: 2.4rem;
 }
 .rst-versions.rst-badge .icon-book{
     display: none;
@@ -271,9 +274,9 @@ ul.fas li .fa-large:before,ul.fas li .fa-large:before{
     display: none !important;
 }
 .rst-versions.rst-badge .rst-current-version{
-    width:auto;
-    height:30px;
-    line-height:30px;
+    width: 90px;
+    height: 2.4rem;
+    line-height:2.4rem;
     padding: 0 6px;
     display: inline-block !important;
     text-align: left !important;
