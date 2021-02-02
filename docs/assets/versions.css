@@ -249,13 +249,12 @@ ul.fas li .fa-large:before,ul.fas li .fa-large:before{
 }
 .rst-versions.rst-badge{
     display: block !important;
-    width:auto !important;
+    width: 100px !important;
     bottom: 0px !important;
     right: 0px !important;
     left:auto;
     border:none;
     text-align: center !important;
-    height: 2.4rem !important;
     line-height: 0;
 }
 .rst-versions.rst-badge .icon-book{
