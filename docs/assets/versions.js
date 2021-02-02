@@ -30,7 +30,7 @@ setTimeout(function() {
         //re-creating dropdown caret for better styling
         var caret = document.createElement('div');
         caret.innerHTML = "<div><span class='fa fa-caret-down'></span></div>"
-        document.querySelector('.rst-current-version').appendChild(caret);
+        div.querySelector('.rst-current-version').appendChild(caret);
   }, 0);
 
 // VERSION WARNINGS
