@@ -28,7 +28,7 @@ setTimeout(function() {
         document.getElementsByTagName('head')[0].appendChild(script); 
 
         //re-creating dropdown caret for better styling
-        const caret = document.createElement('div');
+        var caret = document.createElement('div');
         caret.innerHTML = "<div><span class='fa fa-caret-down'></span></div>"
         document.querySelector(".rst-versions > .rst-current-version").appendChild(caret);
   }, 0);
