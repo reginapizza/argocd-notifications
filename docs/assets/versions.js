@@ -7,6 +7,7 @@ setTimeout(function() {
         const container = div.querySelector('.rst-versions');
         var caret = document.createElement('div');
         caret.innerHTML = "<span class='fa fa-caret-down'></span>"
+        caret.classList.add('dropdown-caret')
         div.querySelector('.rst-current-version').appendChild(caret);
         div.querySelector('.rst-current-version').addEventListener('click', function() {
             const classes = container.className.split(' ');
@@ -28,12 +29,7 @@ setTimeout(function() {
         var script = document.createElement('script');
         script.src = 'https://regina-argocd-notifications.readthedocs.io/_/api/v2/footer_html/?'+
             'callback=' + callbackName + '&project=regina-argocd-notifications&page=&theme=mkdocs&format=jsonp&docroot=docs&source_suffix=.md&version=' + (window['READTHEDOCS_DATA'] || { version: 'latest' }).version;
-        document.getElementsByTagName('head')[0].appendChild(script); 
-
-        // //re-creating dropdown caret for better styling
-        // var caret = document.createElement('div');
-        // caret.innerHTML = <span class='fa fa-caret-down'></span>"
-        // div.querySelector('.rst-current-version').appendChild(caret);
+        document.getElementsByTagName('head')[0].appendChild(script);
   }, 0);
 
 // VERSION WARNINGS
