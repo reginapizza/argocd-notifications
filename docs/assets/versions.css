@@ -249,14 +249,14 @@ ul.fas li .fa-large:before,ul.fas li .fa-large:before{
 }
 .rst-versions.rst-badge{
     display: block !important;
-    width:auto;
+    width:auto !important;
     bottom: 0px !important;
     right: 0px !important;
     left:auto;
     border:none;
-    max-width: 100px !important;
     text-align: center !important;
     height: 2.4rem !important;
+    line-height: 0;
 }
 .rst-versions.rst-badge .icon-book{
     display: none;
@@ -274,9 +274,9 @@ ul.fas li .fa-large:before,ul.fas li .fa-large:before{
     display: none !important;
 }
 .rst-versions.rst-badge .rst-current-version{
-    width: 90px;
-    height: 2.4rem;
-    line-height:2.4rem;
+    width: 90px !important;
+    height: 2.4rem !important;
+    line-height:2.4rem !important;
     padding: 0 6px;
     display: inline-block !important;
     text-align: left !important;
