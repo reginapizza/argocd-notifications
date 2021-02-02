@@ -1,6 +1,10 @@
 .md-header-nav__title {
     display: flex;
 }
+
+.dropdown-caret {
+    display: inline-block !important;
+}
   
 .rst-other-versions {
     text-align: right;
@@ -180,6 +184,9 @@ ul.fas li .fa-large:before,ul.fas li .fa-large:before{
 }
 .rst-versions .rst-current-version .fa{
     color:#fcfcfc
+}
+.rst-versions .rst-current-version .fa-caret-down{
+    display: none !important;
 }
 .rst-versions .rst-current-version .fa-book{
     float:left
