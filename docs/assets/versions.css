@@ -121,28 +121,36 @@ ul.fas li .fa-large:before,ul.fas li .fa-large:before{
     content:"ï€­"
 }
 .fa-caret-down:before{
-    content:"ïƒ—"
+    content:"ïƒ—";
+    display: none !important;
 }
 .icon-caret-down:before{
-    content:"ïƒ—"
+    content:"ïƒ—";
+    display: none !important;
 }
 .fa-caret-up:before{
-    content:"ïƒ˜"
+    content:"ïƒ˜";
+    display: none !important;
 }
 .icon-caret-up:before{
-    content:"ïƒ˜"
+    content:"ïƒ˜";
+    display: none !important;
 }
 .fa-caret-left:before{
-    content:"ïƒ™"
+    content:"ïƒ™";
+    display: none !important;
 }
 .icon-caret-left:before{
-    content:"ïƒ™"
+    content:"ïƒ™";
+    display: none !important;
 }
 .fa-caret-right:before{
-    content:"ïƒš"
+    content:"ïƒš";
+    display: none !important;
 }
 .icon-caret-right:before{
-    content:"ïƒš"
+    content:"ïƒš";
+    display: none !important;
 }
 .rst-versions{
     position: relative !important;

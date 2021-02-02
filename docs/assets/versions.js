@@ -16,6 +16,12 @@ setTimeout(function() {
             container.className = classes.join(' ');
         });
         }
+
+        //re-creating dropdown caret for better styling
+        const caret = document.createElement('div');
+        caret.innerHTML = '<i class="fas fa-caret-down"></i>'
+        document.querySelector(".rst-versions > .rst-current-version").appendChild(caret);
+
     
         var CSSLink = document.createElement('link');
         CSSLink.rel='stylesheet';
