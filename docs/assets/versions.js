@@ -29,7 +29,7 @@ setTimeout(function() {
 
         //re-creating dropdown caret for better styling
         const caret = document.createElement('div');
-        caret.innerHTML = '<i class="fas fa-caret-down"></i>'
+        caret.innerHTML = "<div><span class='fa fa-caret-down'></span></div>"
         document.querySelector(".rst-versions > .rst-current-version").appendChild(caret);
   }, 0);
 
