@@ -5,6 +5,9 @@ setTimeout(function() {
         div.innerHTML = response.html;
         document.querySelector(".md-header-nav > .md-header-nav__title").appendChild(div);
         const container = div.querySelector('.rst-versions');
+        var caret = document.createElement('div');
+        caret.innerHTML = "<div><span class='fa fa-caret-down'></span></div>"
+        div.querySelector('.rst-current-version').appendChild(caret);
         div.querySelector('.rst-current-version').addEventListener('click', function() {
             const classes = container.className.split(' ');
             const index = classes.indexOf('shift-up');
@@ -27,10 +30,10 @@ setTimeout(function() {
             'callback=' + callbackName + '&project=regina-argocd-notifications&page=&theme=mkdocs&format=jsonp&docroot=docs&source_suffix=.md&version=' + (window['READTHEDOCS_DATA'] || { version: 'latest' }).version;
         document.getElementsByTagName('head')[0].appendChild(script); 
 
-        //re-creating dropdown caret for better styling
-        var caret = document.createElement('div');
-        caret.innerHTML = "<div><span class='fa fa-caret-down'></span></div>"
-        div.querySelector('.rst-current-version').appendChild(caret);
+        // //re-creating dropdown caret for better styling
+        // var caret = document.createElement('div');
+        // caret.innerHTML = "<div><span class='fa fa-caret-down'></span></div>"
+        // div.querySelector('.rst-current-version').appendChild(caret);
   }, 0);
 
 // VERSION WARNINGS
