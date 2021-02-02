@@ -7,6 +7,7 @@ setTimeout(function() {
         const container = div.querySelector('.rst-versions');
         var caret = document.createElement('div');
         caret.innerHTML = "<i class='fa fa-caret-down dropdown-caret'></i>"
+        caret.classList.add('dropdown-caret')
         div.querySelector('.rst-current-version').appendChild(caret);
         div.querySelector('.rst-current-version').addEventListener('click', function() {
             const classes = container.className.split(' ');
