@@ -1,5 +1,4 @@
 setTimeout(function() {
-    div.querySelector('.rst-current-version').addEventListener('change', (event) => {
         const callbackName = 'callback_' + new Date().getTime();
         window[callbackName] = function (response) {
         const div = document.createElement('div');
@@ -30,7 +29,6 @@ setTimeout(function() {
         document.getElementsByTagName('head')[0].appendChild(script); 
     
         console.log("RTD data is " + JSON.stringify((window['READTHEDOCS_DATA'])))
-    });
   }, 0);
 
 // VERSION WARNINGS
