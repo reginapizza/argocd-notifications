@@ -5,6 +5,10 @@
 .dropdown-caret {
     display: inline-block !important;
 }
+
+.fa .fa-angle-down {
+    display: inline-block !important;
+}
   
 .rst-other-versions {
     text-align: right;

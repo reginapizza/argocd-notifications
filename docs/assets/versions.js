@@ -6,7 +6,7 @@ setTimeout(function() {
         document.querySelector(".md-header-nav > .md-header-nav__title").appendChild(div);
         const container = div.querySelector('.rst-versions');
         var caret = document.createElement('div');
-        caret.innerHTML = "<i class='fas fa-chevron-down'></i>"
+        caret.innerHTML = "<i class='fas fa-angle-down'></i>"
         caret.classList.add('dropdown-caret')
         div.querySelector('.rst-current-version').appendChild(caret);
         div.querySelector('.rst-current-version').addEventListener('click', function() {
