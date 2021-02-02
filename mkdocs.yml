@@ -4,7 +4,6 @@ strict: true
 google_analytics:
 - 'UA-105170809-5'
 - 'auto'
-
 theme:
   name: material
   palette:
@@ -14,17 +13,15 @@ theme:
   logo: 'assets/logo.png'
 extra_javascript:
   - assets/versions.js
-  - assets/version-select.js
 extra_css:
   - assets/versions.css
-  - assets/version-select.css
 markdown_extensions:
 - codehilite
 - admonition
 - pymdownx.highlight
 - pymdownx.superfences
-- markdown_include.include:
-    base_path: docs
+# - markdown_include.include:
+#     base_path: docs
 - toc:
     permalink: true
 nav:
